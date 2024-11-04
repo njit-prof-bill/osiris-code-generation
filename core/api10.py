@@ -39,7 +39,7 @@ class Api10:
         if not request.language.strip():
             raise HTTPException(status_code=400, detail="Language cannot be empty.")
         if not request.code.strip():
-            raise HTTPException(status_code=400, detail="Language cannot be empty.")
+            raise HTTPException(status_code=400, detail="Code cannot be empty.")
         try:
             code = await asyncio.to_thread(self.generateValidation, request.description, request.code, request.language)
             return {"valid": code}
