@@ -5,6 +5,8 @@ import asyncio
 from dotenv import load_dotenv
 from api1 import *
 from api9 import *
+from api4 import *
+from api10 import *
 
 load_dotenv()
 app = FastAPI()
@@ -19,6 +21,8 @@ client = OpenAI(api_key=openai_api_key)
 
 api1 = Api1(client, router)
 api9 = Api9(client, router)
+api4 = Api4(client, router)
+api10 = Api10(client, router)
 
 app.include_router(router)
 
