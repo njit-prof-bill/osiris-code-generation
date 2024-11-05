@@ -9,6 +9,8 @@ from api5 import *
 from api8 import *
 from api9 import *
 from api10 import *
+from api3 import *
+from api7 import *
 
 load_dotenv()
 app = FastAPI()
@@ -27,6 +29,8 @@ api5 = Api5(client, router)
 api8 = Api8(client, router)
 api9 = Api9(client, router)
 api10 = Api10(client, router)
+api3 = Api3(client, router)
+api7 = Api7(client, router)
 
 app.include_router(router)
 
