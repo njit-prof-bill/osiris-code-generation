@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class CodeRequest(BaseModel):
     description: str  # The natural language description of the class to generate
     language: str  # The programming language for the generated class
-
+ 
 
 class Api6:
     def __init__(self, _client, router):

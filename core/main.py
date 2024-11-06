@@ -37,7 +37,7 @@ api9 = Api9(client, router)
 api10 = Api10(client, router)
 
 app.include_router(router)
-
+ 
 #start server from /core with below
 #python -m uvicorn main:app --reload
 

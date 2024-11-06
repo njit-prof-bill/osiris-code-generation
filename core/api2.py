@@ -8,7 +8,7 @@ class CodeRequest(BaseModel):
     description: str  # The natural language description of the API functionality
     method: str  # The HTTP method for the API
 
-
+ 
 class Api2:
     def __init__(self, _client, router):
         self.client = _client
