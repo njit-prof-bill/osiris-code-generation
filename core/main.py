@@ -26,11 +26,11 @@ if not openai_api_key:
 client = OpenAI(api_key=openai_api_key)
 
 api1 = Api1(client, router)
-api2 = Api1(client, router)
+api2 = Api2(client, router)
 api3 = Api3(client, router)
 api4 = Api4(client, router)
 api5 = Api5(client, router)
-api6 = Api1(client, router)
+api6 = Api6(client, router)
 api7 = Api7(client, router)
 api8 = Api8(client, router)
 api9 = Api9(client, router)
